@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "my_state_bucket" {
 
 #in this case the ID for the instance below will be aws_instance.app_server
 resource "aws_instance" "app_server" {
-  ami = "ami-0db188056a6ff81ae"
+  ami           = "ami-0db188056a6ff81ae"
   instance_type = "t2.micro"
 
   tags = {
